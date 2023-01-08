@@ -1,6 +1,6 @@
 <?php
 
-function singUpUser() {
+function signUpUser() {
 $mysqli = new mysqli("localhost","root","Mikamen2","biblioteka");
 
 // Declare signup values
@@ -30,5 +30,5 @@ if ($stmt -> execute()) {
 echo '<br> <a href="..\forms\signup.html"> Go back to signup page</a>' ;
 }
 
-singUpUser();
+signUpUser();
 ?>
