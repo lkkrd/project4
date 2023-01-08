@@ -1,7 +1,7 @@
 <?php
 
 function signUpUser() {
-$mysqli = new mysqli("localhost","root","Mikamen2","biblioteka");
+$mysqli = new mysqli("localhost","root","password","biblioteka");
 
 // Declare signup values
 $firstname = strtoupper($_REQUEST['first-name-signup'] );

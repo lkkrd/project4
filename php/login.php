@@ -5,7 +5,7 @@ echo 'your login: '.$login.'</br>';
 echo 'your password: '.$pwd;
 
 
-$mysqli = new mysqli("localhost","root","Mikamen2","biblioteka");
+$mysqli = new mysqli("localhost","root","password","biblioteka");
 
 // Check connection
 if ($mysqli -> connect_errno) {
