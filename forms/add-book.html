@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a book!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Add book to db</h2>
+    <form action="..\php\add-book.php" method="get">
+      <input type="text" name="book-title" placeholder="Enter books title" />
+      <input type="text" name="book-author" placeholder="Enter books author" />
+      <select type="text" name="book-genere" placeholder="Enter books genere">
+        <option value="genere-1">Genere 1</option>
+        <option value="genere-2">Genere 2</option>
+        <option value="genere-3">Genere 3</option>
+        <option value="genere-4">Genere 4</option>
+      </select>
+      <input type="submit" value="add to db" id="submit" />
+    </form>
+  </body>
+</html>

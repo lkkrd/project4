@@ -1,0 +1,71 @@
+:root {
+  --clr-background: azure;
+}
+* {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--clr-background);
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body.welcome-animation {
+  animation: 2s ease-out darken forwards;
+}
+.login-box {
+  position: relative;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+h2 {
+  margin: 30px;
+}
+h6 {
+  color: rgba(62, 62, 62, 0.671);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: red;
+  cursor: pointer;
+}
+input {
+  margin: 5px;
+}
+
+#submit:hover {
+  color: azure;
+  background-color: black;
+  cursor: pointer;
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes darken {
+  0% {
+    background-color: var(--clr-background);
+    color: var(--clr-background);
+  }
+  50% {
+    background-color: black;
+    color: black;
+  }
+  100% {
+    color: var(--clr-background);
+    background-color: black;
+  }
+}
