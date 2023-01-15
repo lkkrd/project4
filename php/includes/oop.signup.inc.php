@@ -21,6 +21,24 @@ if (is_a($user, 'signUpControl')) {
    echo '<br><strong> user is not an singUpCOntrol object</strong>';
 }
 
+//TODO: funkcja isFilledAll traktuje string = '' jako not empty
+if (!$user->isFilledAll()) {
+   echo '<br><strong>Error handler:</strong> nie wszystkie pola są wypełnione';
+   exit();
+} else {
+   echo '<br>wszystkie pola są wypełnione';
+}
+
+if (!$user->isPasswordMatch()){
+   echo '<br><strong>Error handler:</strong> Podane hasła nie są takie same';
+   exit();
+}
+
+if (!$user->isEmailEmailish()){
+   echo '<strong>Error handler:</strong> podany email jest niepoprawny';
+   exit();
+}
+
 //TODO: why can't I call this function when private?
 $user->signUpUser();
 
