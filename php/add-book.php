@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli ("localhost", "root", "Mikamen2", "biblioteka");
+$mysqli = new mysqli ("localhost", "root", "pwd", "biblioteka");
 
 //declare values
 $title = strtoupper($_REQUEST['book-title']);
